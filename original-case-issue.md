@@ -19,10 +19,11 @@ So I modiefied the xsdata init-config file to preserve the case and I got a recu
            ^^^^^^^^^
 RecursionError: maximum recursion depth exceeded
 ```
-I'm guessing the recursion error comes from the WSDL having the same name as the XSD? But I'm not sure about this.
+Based on [generation.log](./generation.log) lines 70 to 145, I'm guessing the recursion error comes [from a field name referencing itself in its type](#potential-underlying-issue). If that's the case this should be easily fixable.
 
 You can try it by [cloning this repo](https://github.com/dsfaccini/xsdata-issues) and running the generate script.
 
+## Potential underlying issue
 Also, if you look at the generated module (generated/conn/signature_service_v7_5_6.py) you'll see the following on line 259
 
 ```python

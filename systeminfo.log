@@ -1,0 +1,14 @@
+$ python --version
+Python 3.11.1
+
+$ pip show xsdata
+Name: xsdata
+Version: 24.4
+Summary: Python XML Binding
+Home-page:
+Author:
+Author-email: Christodoulos Tsoulloftas <chris@komposta.net>
+License: MIT
+Location: C:\Users\zackt\AppData\Local\Programs\Python\Python311\Lib\site-packages
+Requires: typing-extensions
+Required-by:
