@@ -2,7 +2,7 @@ Hi @tefra,
 
 Working on this same project I wanted to use originalCase for both the *Class names* and the *Field names*. The reason is, I already have a partial code base using the original names (in `PascalCase`) and mapping these existing functions to generated `snake_case` *Class* and *Field* names is a whole chore.
 
-So I modiefied the xsdata init-config file to preserve the case and I got a recursion error on the last step of generation.
+So I modified the xsdata init-config file to preserve the case and I got a recursion error on the last step of generation.
 ```xml
     <!-- <ClassName case="originalCase" safePrefix="type"/> -->
     <!-- <FieldName case="originalCase" safePrefix="value"/> -->
