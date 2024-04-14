@@ -21,7 +21,7 @@ RecursionError: maximum recursion depth exceeded
 ```
 I'm guessing the recursion error comes from the WSDL having the same name as the XSD? But I'm not sure about this.
 
-You can try it by cloning this (TODO push) repo and running the generate script.
+You can try it by [cloning this repo](https://github.com/dsfaccini/xsdata-issues) and running the generate script.
 
 Also, if you look at the generated module (generated/conn/signature_service_v7_5_6.py) you'll see the following on line 259
 
